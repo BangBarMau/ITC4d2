@@ -47,7 +47,8 @@ frappe.ui.form.on('Program Enrollment', {
 				query: 'erpnext.education.doctype.program_enrollment.program_enrollment.get_students',
 				filters: {
 					'academic_year': frm.doc.academic_year,
-					'academic_term': frm.doc.academic_term
+					'academic_term': frm.doc.academic_term,
+					'enabled': frm.doc.student
 				}
 			}
 		});
